@@ -4,12 +4,13 @@ export default function Hero() {
   return (
     <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20">
       <div className="container  px-4 flex flex-col md:flex-row md:mx-6 items-center justify-center">
-        <div className="md:w-1/2 mb-10 md:mb-0">
+        <div className="md:w-1/2 mb-10 md:mb-0 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
+             
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Khushboo Kumari
             </h1>{" "}
@@ -39,7 +40,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <div className="flex space-x-4">
+            <div className="flex flex-wrap justify-center  gap-4">
               <a
                 href="#contact"
                 className="bg-white text-blue-700 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors"
@@ -62,11 +63,19 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <div className="h-64 w-64 md:h-80 md:w-80 rounded-full bg-blue-500 bg-opacity-30 flex items-center justify-center">
+              {/* <div className=" h-64 w-64 md:h-80 md:w-80 rounded-full bg-blue-500 bg-opacity-30 flex items-center justify-center">
                 <img
                   src="/kk.jpg"
                   alt=""
-                  className="h-full w-full object-cover rounded-full"
+                  className=" h-full w-full object-contain rounded-full"
+                />
+              </div> */}
+
+              <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-[25rem] md:h-[25rem] bg-slate-800 border border-slate-700 rounded-full shadow-xl animate-float">
+                <img
+                  src="/kk.jpg"
+                  alt="profile"
+                  className="w-full h-full object-cover object-top  rounded-full"
                 />
               </div>
             </motion.div>
